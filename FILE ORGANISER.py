@@ -34,7 +34,7 @@ def select_dir():
         loading_bar.destroy()
         return
     ext_types = settings['ext_types']
-    root.title("File Organizer [Abhi Cracker] | Status : Organizing")
+    root.title("File Organizer [arunchoudhary887] | Status : Organizing")
     # Mapping The Files According To Their Extensions
     mapping(dir, list_dir, ext_types, loading_bar)
 
@@ -77,7 +77,7 @@ def mapping(dir, list_dir, ext_types, loading_bar):
     loading_bar.stop()
     loading_bar.destroy()
     os.startfile(dir)
-    root.title("File Organizer [Abhi Cracker] | Status : Idle")
+    root.title("File Organizer [arunchoudhary887] | Status : Idle")
 
 
 def github():
@@ -102,7 +102,7 @@ def edit_settings():
     # Declaration of Main Components
     # Settings 
     settings = get_settings()
-    root.title("File Organizer [Abhi Cracker] | Status : Settings")
+    root.title("File Organizer [arunchoudhary887] | Status : Settings")
     app = CTk()
     app.title("Settings")
     app.geometry("500x700")
@@ -118,7 +118,7 @@ def edit_settings():
     # Settings Importanrt Functions
 
     def save_file(new_settings):
-        root.title("File Organizer [Abhi Cracker] | Status : Save")
+        root.title("File Organizer [arunchoudhary887] | Status : Save")
         settings = str(json.dumps(new_settings, indent=4))
         settings_file = open("settings.json", "w")
         settings_file.write(settings)
@@ -338,7 +338,7 @@ def edit_settings():
         'Sans Serif', 15), text_color=settings['c2'], command=lambda: [root.title("File Organizer [Abhi Cracker] | Status : Idle"), app.destroy()])
     back.pack(side="bottom", padx=10, pady=10)
     app.protocol("WM_DELETE_WINDOW", lambda: [root.title(
-        "File Organizer [Abhi Cracker] | Status : Idle"), app.destroy()])
+        "File Organizer [arunchoudhary887] | Status : Idle"), app.destroy()])
     app.mainloop()
 
 
@@ -348,7 +348,7 @@ set_appearance_mode("dark")
 set_default_color_theme("dark-blue")
 root = CTk()
 root.iconbitmap(resource_path("icon.ico"))
-root.title("File Organizer [Abhi Cracker] | Status : Idle")
+root.title("File Organizer [arunchoudhary887] | Status : Idle")
 root.geometry("500x250")
 root.resizable(False, False)
 
@@ -357,7 +357,7 @@ main_label = CTkLabel(root, text="File Organizer", font=(
     "Agency Fb", 42, "bold"), text_color=settings['c1'])
 main_label.pack(pady=20)
 # Author Label
-author_label = CTkLabel(root, text="Developer : Abhi Cracker", font=(
+author_label = CTkLabel(root, text="Developer : arunchoudhary887", font=(
     "Agency Fb", 13, "bold"), text_color=settings['c3'])
 author_label.pack(pady=2)
 # dir Selector
